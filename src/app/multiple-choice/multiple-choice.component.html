@@ -1,8 +1,0 @@
-<label *ngFor="let ref of refs"
-  [ngClass]="{'border': control.value.has(ref.value)}">
-  <input type="checkbox"
-    [value]="ref.value"
-    [checked]="control.value.has(ref.value)"
-    (change)="change($event)">
-  <span>{{ ref.label }}</span>
-</label>

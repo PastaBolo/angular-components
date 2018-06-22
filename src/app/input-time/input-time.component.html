@@ -1,0 +1,6 @@
+<input type="text" 
+  placeholder="--:--"
+  [ngClass]="{'error': checkFormat(control.value)}"
+  [value]="control.value"
+  (click)="onClick($event)"
+  (keyup)="onKeyUp($event)">

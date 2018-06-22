@@ -1,0 +1,94 @@
+/* less style */
+
+/* @inactiveColor: #ccc;
+@activeColor: #5F6776;
+@transitionDuration: 0.4s;
+@height: 22px;
+@borderSize: 3px;
+
+label {display: inline-block;}
+
+input {display: none;}
+
+.parent {
+  background-color: @inactiveColor;
+  border: @borderSize solid @inactiveColor;
+  border-radius: (@height + 2 * @borderSize) / 2;
+  display: flex;
+  width: 40px;
+  height: @height;
+  transition: @transitionDuration;
+}
+
+.child {
+  flex: 1;
+  background-color: #fff;
+  border-radius: @height / 2;
+  transition: @transitionDuration;
+}
+
+.parent:before,
+.parent:after {
+  content: '';
+  transition: @transitionDuration;
+}
+.parent:before {flex: 0;}
+.parent:after {flex: 1;}
+
+:checked+.parent {
+  background-color: @activeColor;
+  border-color: @activeColor;
+}
+:checked+.parent:before {flex: 1;}
+:checked+.parent:after {flex: 0;} */
+
+
+label {display: inline-block;}
+
+input {
+  display: none;
+}
+
+.parent {
+  background-color: #ccc;
+  border: 3px solid #ccc;
+  border-radius: 13px;
+  display: flex;
+  width: 40px;
+  height: 20px;
+  transition: 0.4s;
+}
+
+.child {
+  flex: 1;
+  background-color: #fff;
+  border-radius: 10px;
+  transition: 0.4s;
+}
+
+.parent:before,
+.parent:after {
+  content: '';
+  transition: 0.4s;
+}
+
+.parent:before {
+  flex: 0;
+}
+
+.parent:after {
+  flex: 1;
+}
+
+:checked+.parent {
+  background-color: blueviolet;
+  border-color: blueviolet;
+}
+
+:checked+.parent:before {
+  flex: 1;
+}
+
+:checked+.parent:after {
+  flex: 0;
+}

@@ -1,0 +1,7 @@
+<label *ngFor="let ref of references">
+  <input type="checkbox" 
+    [value]="ref.value"
+    [checked]="control.value.includes(ref.value)" 
+    (change)="updateList($event)">
+  <span>{{ ref.label }}</span>
+</label>
