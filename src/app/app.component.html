@@ -1,12 +1,14 @@
 <form [formGroup]="form">
-  <app-multiple-options [control]="form.get('multipleOptions')" [references]="references.multipleOptions"></app-multiple-options>
+  <app-multiple-options [control]="form.get('multipleOptions')"
+    [references]="references.multipleOptions"></app-multiple-options>
   {{ form.get('multipleOptions').value | json }}
-  <app-radio [control]="form.get('radio')" [references]="references.radio"></app-radio>
+  <app-radio [control]="form.get('radio')"
+    [references]="references.radio"></app-radio>
   {{ form.get('radio').value }}
-  <app-toggle-buttons [control]="form.get('toggleButtons')" [references]="references.toggleButtons"></app-toggle-buttons>
+  <app-toggle-buttons [control]="form.get('toggleButtons')"
+    [references]="references.toggleButtons"></app-toggle-buttons>
   {{ form.get('toggleButtons').value }}
   <app-toggle-slider [control]="form.get('toggleSlider')"></app-toggle-slider>
   {{ form.get('toggleSlider').value }}
-  <app-input-time [control]="form.get('time')"></app-input-time>
-  {{ form.get('time').value }}
+  <app-input-time></app-input-time>
 </form>
