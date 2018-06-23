@@ -22,7 +22,8 @@ export class AppComponent {
       multipleOptions: fb.control([2]),
       radio: fb.control(2),
       toggleButtons: fb.control(null),
-      toggleSlider: fb.control(false)
+      toggleSlider: fb.control(false),
+      inputTime: fb.control('wrong value')
     })
   }
 }

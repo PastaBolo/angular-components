@@ -10,5 +10,6 @@
   {{ form.get('toggleButtons').value }}
   <app-toggle-slider [control]="form.get('toggleSlider')"></app-toggle-slider>
   {{ form.get('toggleSlider').value }}
-  <app-input-time></app-input-time>
+  <app-input-time [control]="form.get('inputTime')"></app-input-time>
+  {{ form.get('inputTime').value }}
 </form>
