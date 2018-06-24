@@ -1,7 +1,9 @@
 <label *ngFor="let ref of references">
-  <input type="checkbox" 
+  <input
+    type="checkbox"
     [value]="ref.value"
-    [checked]="control.value === ref.value" 
-    (change)="updateChoice($event.target.value)">
+    [checked]="control.value === ref.value"
+    (change)="updateChoice($event.target.value)"
+  >
   <span>{{ ref.label }}</span>
 </label>

@@ -1,4 +1,6 @@
-<input placeholder="08:00"
+<input
+  [placeholder]="placeholder"
   [value]="control.value"
   (keydown)="update($event)"
-  (click)="handleClick($event)">
+  (click)="handleClick($event)"
+>

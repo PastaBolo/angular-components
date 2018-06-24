@@ -7,7 +7,8 @@ import { MultipleOptionsComponent } from './multiple-options/multiple-options.co
 import { RadioComponent } from './radio/radio.component'
 import { ToggleButtonsComponent } from './toggle-buttons/toggle-buttons.component'
 import { ToggleSliderComponent } from './toggle-slider/toggle-slider.component'
-import { InputTimeComponent } from './input-time/input-time.component'
+import { InputTimeComponent } from './input-time/input-time.component';
+import { OpeningHoursComponent } from './opening-hours/opening-hours.component'
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { InputTimeComponent } from './input-time/input-time.component'
     RadioComponent,
     ToggleButtonsComponent,
     ToggleSliderComponent,
-    InputTimeComponent
+    InputTimeComponent,
+    OpeningHoursComponent
   ],
   imports: [BrowserModule, ReactiveFormsModule],
   providers: [],

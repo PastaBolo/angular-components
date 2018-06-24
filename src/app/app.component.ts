@@ -23,7 +23,9 @@ export class AppComponent {
       radio: fb.control(2),
       toggleButtons: fb.control(null),
       toggleSlider: fb.control(false),
-      inputTime: fb.control('wrong value')
+      inputTime: fb.control('wrong value'),
+      openingHour: fb.control(null),
+      closingHour: fb.control(null)
     })
   }
 }

@@ -8,6 +8,7 @@ import { FormControl } from '@angular/forms'
 })
 export class InputTimeComponent implements OnInit {
   @Input() control: FormControl
+  @Input() placeholder: string = '08:00'
   private regExpTime = RegExp('^([0-1]?[0-9]|2[0-3]):[0-5][0-9]$')
 
   ngOnInit(): void {
@@ -37,7 +38,7 @@ export class InputTimeComponent implements OnInit {
   }
 
   private initInput(e): void {
-    this.control.setValue('00:00')
+    this.control.setValue(this.placeholder)
     setTimeout(() => {
       e.target.selectionStart = 0
       e.target.selectionEnd = 1
