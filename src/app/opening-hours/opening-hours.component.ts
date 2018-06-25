@@ -14,6 +14,10 @@ export class OpeningHoursComponent implements OnInit {
 
   ngOnInit() {}
 
+  
+  // Ajout de validateur
+  // Idée : ajouter une propriété contenant tous les validateurs plutôt que isRequired ?
+
   // @Input() isRequired: boolean = false;
 
   // ngOnInit(): void {
