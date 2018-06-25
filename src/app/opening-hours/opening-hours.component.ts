@@ -17,6 +17,9 @@ export class OpeningHoursComponent implements OnInit {
   
   // Ajout de validateur
   // Idée : ajouter une propriété contenant tous les validateurs plutôt que isRequired ?
+  // C'est assez étrange car le composant ne devrait pas s'occuper de setter les validateurs
+  // => c'est le rôle du formbuilder lors de la création du formgroup (dans un service ou composant parent)
+  // => Ce composant n'a donc pas de rôle, il suffirait de mettre 2 input-time dans le composant parent ?
 
   // @Input() isRequired: boolean = false;
 
